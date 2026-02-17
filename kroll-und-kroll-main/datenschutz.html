@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Datenschutzerklärung – Kroll & Kroll Bauelemente</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="nav">
+            <a class="brand" href="index.html" aria-label="Startseite">
+                <div class="mark" aria-hidden="true">K&amp;K</div>
+                <div class="brandTitle">
+                    <strong>Kroll &amp; Kroll</strong>
+                    <span>Bauelemente</span>
+                </div>
+            </a>
+            <div class="actions">
+                <a class="btn" href="impressum.html">Impressum</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+    <section>
+        <div class="container">
+            <div class="sectionHead">
+                <div>
+                    <h2>Datenschutzerklärung</h2>
+                    <p>Stand: <span id="privacyDate"></span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>1. Verantwortlicher</h3>
+                <p>
+                    <strong>Kroll &amp; Kroll Bauelemente GbR</strong><br>
+                    [Straße Hausnummer], [PLZ Ort], Deutschland<br>
+                    Telefon: <a href="tel:+49XXXXXXXXXXX">+49 XX XXXXXXXX</a><br>
+                    E-Mail: <a href="mailto:info@kroll-bauelemente.de">info@kroll-bauelemente.de</a>
+                </p>
+
+                <h3 style="margin-top:18px;">2. Hosting</h3>
+                <p>
+                    Diese Website wird bei einem Hosting-Anbieter betrieben. Dabei können Server-Logfiles entstehen.
+                    Hosting-Anbieter: <strong>[Name/Adresse des Hosters]</strong>.
+                </p>
+
+                <h3 style="margin-top:18px;">3. Server-Logfiles</h3>
+                <p>
+                    Beim Aufruf der Website kann der Hosting-Anbieter u. a. IP-Adresse, Zeitpunkt, Referrer, Browser/OS und aufgerufene Seiten speichern.
+                    Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Sicherheit/Stabilität). Speicherdauer: <strong>[X Tage]</strong>.
+                </p>
+
+                <h3 style="margin-top:18px;">4. Kontaktaufnahme</h3>
+                <p>
+                    Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage.
+                    Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertraglich/Vertrag) oder Art. 6 Abs. 1 lit. f DSGVO (Kommunikation).
+                </p>
+
+                <h3 style="margin-top:18px;">5. Cookies & Tracking</h3>
+                <p>
+                    Diese Website ist als statische Seite konzipiert und nutzt keine Tracking- oder Marketing-Cookies.
+                    Bei Einbindung externer Dienste (z. B. Google Maps, Analytics) muss diese Erklärung ergänzt werden.
+                </p>
+
+                <h3 style="margin-top:18px;">6. Ihre Rechte</h3>
+                <p>
+                    Sie haben Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO)
+                    sowie ein Beschwerderecht bei einer Aufsichtsbehörde (Art. 77 DSGVO).
+                </p>
+
+                <p class="hint">Vorlage – bitte mit echten Unternehmens-/Hoster-Daten ergänzen.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footRow">
+            <div>© <span id="year"></span> Kroll &amp; Kroll Bauelemente</div>
+            <div style="display:flex; gap:14px; flex-wrap:wrap;">
+                <a href="impressum.html">Impressum</a>
+                <a href="index.html">Startseite</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+<script>
+    // Datum nur auf Datenschutz-Seite
+    const el = document.getElementById("privacyDate");
+    if (el) {
+        const d = new Date();
+        el.textContent = d.toLocaleDateString("de-DE", { year:"numeric", month:"2-digit", day:"2-digit" });
+    }
+</script>
+</body>
+</html>
