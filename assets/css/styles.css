@@ -53,6 +53,9 @@ button, input, textarea { font: inherit; }
 
     --shadow: 0 12px 30px rgba(11,18,32,.10);
     --max: 1120px;
+
+    --contrast: #ff6b00;  /* neuer warmer Akzent für CTA (z. B. orange für Handwerk) */
+    --dark-bg: #0b1220;  /* für optionalen Dark-Mode */
 }
 
 /* -------------------------
@@ -345,6 +348,13 @@ footer{
     align-items: stretch;
 }
 @media (max-width: 980px){ .heroGrid{ grid-template-columns: 1fr; } }
+
+.hero-title {
+    font-size: clamp(36px, 5.5vw, 52px);  /* größer, responsiv */
+    line-height: 1.1;
+    font-weight: 800;  /* stärker */
+    letter-spacing: -0.02em;
+}
 
 .kicker{
     display:inline-flex;
